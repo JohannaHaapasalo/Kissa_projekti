@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= paaotsikko %></title>
+    <link rel="stylesheet" href="/tyylit/tyylit.css" class="text/css">
+</head>
+<body>
+    <main>
+        <div class="valikonOtsikko">
+        <h1><%= otsikko %></h1>
+        </div>
+
+        <div class="container">
+            <form action="<%= toiminto %>" method="POST">
+                <p>
+                    <label for="kissaId">Kissan Id:</label>
+                    <input type="text" name="kissaId" id="kissaId", size="5"
+                    value="<%= kissaId.arvo %>" required <%= kissaId.vainluku %> >
+                </p>
+                <p>
+                    <label for="nimi">Nimi:</label>
+                    <input type="text" name="nimi" id="nimi" size="20"
+                    value="<%= nimi.arvo %>" required <%= nimi.vainluku %> >
+                </p>
+                <p>
+                    <label for="painoKg">Kissan paino:</label>
+                    <input type="text" name="painoKg" id="painoKg" size="10"
+                    value="<%= painoKg.arvo %>" <%= painoKg.vainluku %> >
+                </p>
+                <p>
+                    <label for="pituus">Kissan pituus:</label>
+                    <input type="text" name="pituus" id="pituus" size="10"
+                    value="<%= pituus.arvo %>" <%= pituus.vainluku %> > 
+                </p>
+                <p>
+                    <label for="rotu">Kissan rotu:</label>
+                    <input type="text" name="rotu" id="rotu" size="30"
+                    value="<%= rotu.arvo %>" <%= rotu.vainluku %> > 
+                </p>
+                <div>
+                    <button  type="submit" class="laheta" >Lähetä</button>
+                    
+                </div>
+            </form>
+
+            <a href="/" class="nappi"><button>Takaisin valikkoon</button></a>
+        </div>
+    </main>
+    
+</body>
+</html>

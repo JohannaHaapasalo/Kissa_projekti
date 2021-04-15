@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/tyylit/tyylit.css" class="text/css">
+    <title><%= paaotsikko %></title>
+</head>
+<body>
+    <main>
+        <div class="valikonOtsikko">
+        <h1> <%= otsikko %> </h1>
+        </div>
+
+        <div class="container">
+                <form action="<%= toiminto %>" method="POST">
+                    <p>
+                        <label for="kissaId"> Kissan Id:</label>
+                        <input type="text" id="kissaId" name="kissaId" size="5">
+                    </p>
+                    <button type="submit" class="laheta">Lähetä</button>
+
+                </form>
+            
+            <a href="/" class="nappi"><button>Takaisin valikkoon</button></a>
+          </div>  
+    </main>
+</body>
+</html>

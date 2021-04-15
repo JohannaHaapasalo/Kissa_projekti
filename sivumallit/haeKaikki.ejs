@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/tyylit/tyylit.css" class="text/css">
+    <title>Kaikki kissat</title>
+</head>
+<body>
+    <main>
+        <div class="valikonOtsikko">
+        <h1>Kaikki Kissat</h1>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Kissan Id</th>
+                    <th>Nimi</th>
+                    <th>Paino Kg</th>
+                    <th>Pituus</th>
+                    <th>Rotu</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% kissat.forEach( kissa =>{ %>
+                    <tr>
+                        <td>
+                            <%= kissa.kissaId %>
+                        </td>
+                        <td>
+                            <%= kissa.nimi %>
+                        </td>
+                        <td>
+                            <%= kissa.painoKg %>
+                        </td>
+                        <td>
+                            <%= kissa.pituus %>
+                        </td>
+                        <td>
+                            <%= kissa.rotu %>
+                        </td>
+                    </tr>
+               <% }) %>
+            </tbody>
+        </table>
+        
+        <a href="/" class="nappi" ><button>Takaisin valikkoon</button></a>
+        
+    </main>
+    
+</body>
+</html>

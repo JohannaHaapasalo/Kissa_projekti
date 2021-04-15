@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/tyylit/tyylit.css" class="text/css">
+    <title>Tulos</title>
+</head>
+<body>
+    <main>
+        <div class="valikonOtsikko">
+        <h1>Hakemasi tiedot:</h1>
+        </div>
+
+        <div class="container">
+            <p class="tulos">Kissan Id: <%= kissa.kissaId %></p>
+            <p class="tulos">Nimi: <%= kissa.nimi %></p>
+            <p class="tulos">Kissan paino: <%= kissa.painoKg %></p>
+            <p class="tulos">Kissan pituus: <%= kissa.pituus %></p>
+            <p class="tulos">Kissan rotu: <%= kissa.rotu %></p>
+        
+            <img src="/kuvat/happy-cat1.jpg" alt="kisu" class="kisu">  
+           
+        
+            <a href="/" class="nappi"><button>Takaisin valikkoon</button></a>
+        </div>
+   
+        
+    </main>
+</body>
+</html>

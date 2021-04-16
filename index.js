@@ -7,12 +7,12 @@ const express = require('express');
 const app = express();
 
 const port = process.env.PORT || 3000;
-const host = process.env.HOST || 'localhost';
+const host = process.env.HOST || '0.0.0.0';
 
 const Tietovarasto = require('./kissavarasto');
 
 const optiot = {
-    host: 'localhost',
+    host: '0.0.0.0',
     port: process.env.PORT || 3000,
     user: 'asta',
     password: 'QqNxrkW6',

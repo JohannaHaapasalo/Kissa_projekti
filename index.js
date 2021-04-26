@@ -13,7 +13,7 @@ const Tietovarasto = require('./kissavarasto');
 
 const optiot = {
     host: '0.0.0.0',
-    port: process.env.PORT || 3000,
+    port: process.env.DATABASE_URL|| 3000,
     user: 'asta',
     password: 'QqNxrkW6',
     database: 'kissatietokanta'

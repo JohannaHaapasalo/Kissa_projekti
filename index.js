@@ -7,7 +7,7 @@ const express = require('express');
 const app = express();
 
 const port = process.env.PORT || 3306;
-const host = process.env.HOST || 'kissa-app.herokuapp.com/';
+const host = process.env.HOST || '0.0.0.0';
 
 const Tietovarasto = require('./kissavarasto');
 

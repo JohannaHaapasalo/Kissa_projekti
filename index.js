@@ -6,17 +6,17 @@ const express = require('express');
 
 const app = express();
 
-const port = process.env.PORT || 3000;
-const host = process.env.HOST || '0.0.0.0';
+const port = process.env.PORT || 3306;
+const host = process.env.HOST || 'eporqep6b4b8ql12.chr7pe7iynqr.eu-west-1.rds.amazonaws.com';
 
 const Tietovarasto = require('./kissavarasto');
 
 const optiot = {
-    host: '0.0.0.0',
-    port: process.env.DATABASE_URL|| 3000,
-    user: 'asta',
-    password: 'QqNxrkW6',
-    database: 'kissatietokanta'
+    host: 'eporqep6b4b8ql12.chr7pe7iynqr.eu-west-1.rds.amazonaws.com',
+    port: 3306,
+    user: 'mpq1xa8irpau1v2h',
+    password: 'wu3idllzjz2kha8t',
+    database: 'g1hevqvp91vfzg9e'
 
 }
 
